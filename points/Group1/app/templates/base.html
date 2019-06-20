@@ -1,0 +1,20 @@
+
+
+<html>
+    <head>
+        <title>Welcome to TASKS</title>
+        <link href="{{ url_for("static", filename='css/main.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+    <div class="topbar text_effect">
+            <a href="{{ url_for('get_task', task=1) }}">TASK_1</a>
+            <a href="{{ url_for('get_task', task=2) }}">TASK_2</a>
+            <a href="{{ url_for('get_task', task=3) }}">TASK_3</a>
+        <br>
+        {{ tasks.name }}
+    </div>
+                    </div>
+        {% block content %}{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  panel:
+    restart: always
+    build: app/
+    volumes:
+      - ./app/ :/app/
+    ports:
+      - "81:81"

@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  mexican_2:
+    restart: always
+    build: app
+    volumes:
+      - ./app/ :/app/
+    ports:
+      - "8081:8081"

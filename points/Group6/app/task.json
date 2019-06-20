@@ -1,0 +1,25 @@
+[
+  {
+    "name": "xor_beAst",
+    "point": 6,
+    "description": "Пришло время серьезных дел. Мы с бандой придумали план и зашифровали его знаменитым на всю Мексику шифром. В честь нашей банды мы прозвали его К - конечно С - самая О - оригинальная Р - разработка. Англичане даже назвали его по своему XOR.",
+    "file": "xor_beAst.rar",
+    "category": "ppc",
+    "flag": "CTF{PPC_STRONG_TASK}"
+  },
+  {
+    "name": "Pesquisar",
+    "point": 6,
+    "description": "Хола! На территории нашего campamento Шарап вы можете найти несколько qr-кодов. Они помогут вам в поиске еще одного decisión задания. buena suerte!",
+    "category": "joy",
+    "flag": "CTF{qwerty123456789}"
+  },
+  {
+    "name": "magic",
+    "point": 6,
+    "description": "Говорят эту панель взламывали через какие-то магические хэши...",
+    "link": "web/magic/server",
+    "category": "web",
+    "flag": "CTF{E@zy_M@gick_md5}"
+  }
+]

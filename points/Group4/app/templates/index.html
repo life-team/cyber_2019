@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="title text_effect" >
+        <div class="task">
+           {{ tasks.description }}
+        </div>
+        <div class="task_link">
+            {% if tasks.file %}
+                <a class="task_link" href="{{ url_for('static', filename=tasks.file) }}">FILE</a>
+            {% endif %}
+            {% if tasks.link %}
+                 <a class="task_link" href="{{ url_for('static', filename=tasks.link) }}">link</a>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

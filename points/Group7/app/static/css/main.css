@@ -1,0 +1,152 @@
+body {
+  background-image: url(../img/fon.jpg);
+   background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+   }
+a {
+    color: #323232;
+}
+.task_link {
+    color: #ffffff;
+	font-weight:600;
+    font: 50px 'Stylo Bold';
+}
+@font-face {
+	font-family: 'Stylo Bold';
+	src: url('/fonts/s/Stylo_Bold.ttf');
+}
+.text_effect {
+	font-family: 'Stylo Bold';
+	text-shadow: rgb(3, 3, 3) 4px 4px 3px;
+	font-weight:600;
+}
+
+
+.topbar{
+	width: 80%;
+	height: 150px;
+	font-size: 50px;
+	color:#ffffff;
+	background-color:#335599;
+	text-align: center;
+	margin:auto;
+	border-radius: 0  0 100px 100px;
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	opacity: 0.9;
+	box-sizing: border-box;
+	padding-top: 20px;
+	position:static;
+	margin-top:-20px;
+
+}
+
+.title {
+	width: 80%;
+	background-color:#447799;
+	height:auto;
+	border-radius: 30px 30px 30px 30px;
+	box-shadow: 0 0 50px rgba(0,0,0,0.5);
+	margin: auto;
+	margin-top:200px;
+	text-align:center;
+	box-sizing: border-box;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	opacity:0.9;
+}
+
+.title .fon {
+	position:releative;
+	background-color:white;
+	border-radius: 30px 30px 0 0 ;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	margin-top:-8px;
+	background-color:#335599;
+	color:#DCDCDC;
+	opacity:0.9;
+	box-sizing: border-box;
+	padding-top: 50px;
+	font-size: 40px;
+}
+
+.task{
+ 	padding-top: 40px;
+    color: #f1f1f1;
+	text-shadow: #C0C0C0 1px 1px 0px;
+	font-size: 30px;
+}
+
+.check{
+	padding-top: 5%;
+	padding-bottom:  50px;
+	text-shadow: #C0C0C0 1px 1px 0px;
+
+}
+
+input[type=text] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+@media (max-width: 1024px){
+ body {
+
+  background-image: url(../img/mobile_fon.jpg);
+  }
+
+	.topbar{
+		width: 100%;
+		height: 300px;
+		font-size: 80px;
+		border-radius: 5px 5px 150px 150px;
+		box-shadow: 0 0 100px rgba(0,0,0,0.7);
+		box-sizing: border-box;
+		padding-top: 100px;
+	}
+
+	.title{
+		width: 100%;
+		border-radius: 15px;
+		margin-top:20%;
+		height:100%;
+		font-size: 60px;
+		font-weight:800;
+		padding-bottom:100px;
+
+	}
+
+	.title .fon {
+		font-size: 80px;
+		font-weight:800;
+		box-sizing: border-box;
+
+	}
+
+	.task{
+		font-size: 70px;
+		font-weight:700;
+
+	}
+
+	input[type=text] {
+		padding:5px;
+		border:2px solid #ccc;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		height: 24px;
+}
+}
