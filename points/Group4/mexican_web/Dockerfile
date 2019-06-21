@@ -1,6 +1,6 @@
 FROM python:3
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/mexican_web
 
 COPY requirements.txt ./
 RUN pip install --upgrade pip
