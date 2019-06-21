@@ -11,4 +11,4 @@ def hello():
     return resp
 
 
-app.run(host='0.0.0.0', port=8082, threaded=True)
+app.run(host='0.0.0.0', port=8080, threaded=True)

@@ -8,3 +8,10 @@ services:
       - ./app/ :/app/
     ports:
       - "80:80"
+  mexican:
+    restart: always
+    build: mexican_web
+    volumes:
+      - ./mexican_web/ :/mexican_web/
+    ports:
+      - "8080:8080"

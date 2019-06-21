@@ -8,3 +8,23 @@ services:
       - ./app/ :/app/
     ports:
       - "80:80"
+  nginx:
+    # используем последний стабильный образ nginx
+    image: nginx:latest
+    # маршрутизируем порты
+    ports:
+      - "81:81"
+      - "443:443"
+    # монтируем директории, слева директории на основной машине, справа - куда они монтируются в контейнере
+    volumes:
+      - ./magic/hosts:/etc/nginx/conf.d
+      - ./magic/www:/var/www
+      - ./magic/logs:/var/log/nginx
+    # nginx должен общаться с php контейнером
+    links:
+      - php
+  php:
+    # у нас свой образ для PHP, указываем путь к нему и говорим что его надо собрать
+    build: magic/images/php
+    volumes:
+      - ./magic/www:/var/www
